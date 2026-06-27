@@ -17,7 +17,7 @@ public class CalculadoraService {
                 break;
             // Subtração
             case 2:
-                // Ainda vai ser feito
+                resultado = operador.subtracao(numeroA, numeroB);
                 break;
             default:
                 System.out.println("Operação inválida");

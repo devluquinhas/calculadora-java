@@ -6,4 +6,7 @@ public class Operadores implements OperacaoMatematica {
     public double soma(double a, double b) {
         return a + b;
     }
+
+    @Override
+    public double subtracao(double a, double b) { return a - b; }
 }

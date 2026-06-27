@@ -17,7 +17,7 @@ public class Menu {
     public void start() {
         while (true) {
             System.out.printf("[ Calculadora Simples ]%nEstudando o java na prática.");
-            System.out.printf("%n%n[ Módulos ]%n1. Soma%n0. Sair");
+            System.out.printf("%n%n[ Módulos ]%n1. Soma%n2. Subtração%n0. Sair");
             System.out.printf("%n%n Escolha uma operação: ");
 
             int operacao = scanner.nextInt();
