@@ -38,21 +38,15 @@ Responsável pelas regras de negócio da aplicação.
 - `OperacaoMatematica` (interface)
 - `Operadores` (implementação das operações matemáticas)
 
----
-
 ### Application
 Responsável pela lógica de execução do sistema.
 
 - `CalculadoraService`
 
----
-
 ### Presentation
 Responsável pela interação com o usuário.
 
 - `Menu` (interface via terminal)
-
----
 
 ### Main
 Responsável por orquestrar e injetar dependências do sistema
