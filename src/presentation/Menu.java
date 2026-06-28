@@ -33,6 +33,14 @@ public class Menu {
             // Sair
             if (operacao == 0) { break; }
 
+            // Verificação
+            if (operacao < 0 || operacao > ops.size()) {
+                System.out.println("Modulo inválido, observe o número digitado!");
+                scanner.nextLine();
+                scanner.nextLine();
+                continue;
+            }
+
             System.out.printf("%nInsira o primeiro número: ");
             double numeroA = scanner.nextDouble();
             System.out.print("Insira o segundo número: ");
