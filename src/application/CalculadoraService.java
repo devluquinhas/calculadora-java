@@ -1,28 +1,20 @@
 package application;
-import domain.OperacaoMatematica;
+import domain.Operacao;
+
+import java.util.List;
 
 public class CalculadoraService {
-    private final OperacaoMatematica operador;
+    private final List<OperacaoItem> operacoes;
 
-    public CalculadoraService(OperacaoMatematica operador) {
-        this.operador = operador;
+    public CalculadoraService (List<OperacaoItem> operacoes) {
+        this.operacoes = operacoes;
     }
 
-    public double execute(int operacao, double numeroA, double numeroB) {
-        double resultado = 0;
-        switch (operacao) {
-            // Soma
-            case 1:
-                resultado = operador.soma(numeroA, numeroB);
-                break;
-            // Subtração
-            case 2:
-                resultado = operador.subtracao(numeroA, numeroB);
-                break;
-            default:
-                System.out.println("Operação inválida");
-                break;
-        }
-        return resultado;
+    public List<OperacaoItem> listarOperacoes(){
+        return operacoes;
+    }
+
+    public double execute(int index, double a, double b) {
+        return operacoes.get(index).getOperacao().execute(a, b);
     }
 }
