@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Menu {
     private final CalculadoraService servico;
-    private final Scanner scanner = new Scanner(System.in);;
+    private final Scanner scanner = new Scanner(System.in);
     private final DecimalFormat formatador = new DecimalFormat("#.##");
 
     public Menu(CalculadoraService servico) {
